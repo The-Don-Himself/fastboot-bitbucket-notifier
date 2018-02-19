@@ -1,0 +1,28 @@
+{
+  "name": "fastboot-bitbucket-notifier",
+  "version": "1.0.1",
+  "description": "A FastBoot App Server notifier for Bitbucket build artifacts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/campus-discounts/fastboot-bitbucket-notifier.git"
+  },
+  "keywords": [
+    "ember",
+    "fastboot",
+    "notifier",
+    "bitbucket"
+  ],
+  "author": "Don Omondi <don.e.omondi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/campus-discounts/fastboot-bitbucket-notifier/issues"
+  },
+  "homepage": "https://github.com/campus-discounts/fastboot-bitbucket-notifier#readme",
+  "dependencies": {
+    "request": "latest"
+  }
+}
