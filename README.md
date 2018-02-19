@@ -15,7 +15,7 @@ let notifier = new BitbucketNotifier({
   username: 'don_omondi',                   // your Bitbucket username
   password: '123456789Password',            // your Bitbucket app password
   repo:     'my-app/ember.js',              // name of your repo
-  poll:     60 * 1000                       // optional polling interval, defaults to 60 * 1000 i.e every minute
+  poll:     60 * 1000                       // optional polling interval, defaults to 300 * 1000 i.e every 5 minutes
 });
 
 let server = new FastBootAppServer({

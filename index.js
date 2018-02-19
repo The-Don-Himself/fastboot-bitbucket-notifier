@@ -23,7 +23,7 @@ class BitbucketNotifier {
 
     this.repo = options.repo;
 
-    this.pollTime = options.poll || 60 * 1000;
+    this.pollTime = options.poll || 300 * 1000;
 
     let url = this.url;
     let repo = this.repo;
@@ -52,7 +52,7 @@ class BitbucketNotifier {
     let password = addon.password;
 
     let options = {
-        method: 'HEAD',
+        method: 'GET', // Would prefer a Head request but they are not supported
         uri: fileUrl,
         auth: {
             user: username,
