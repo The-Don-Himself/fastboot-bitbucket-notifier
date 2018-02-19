@@ -11,11 +11,10 @@ const FastBootAppServer = require('fastboot-app-server');
 const BitbucketNotifier    = require('fastboot-bitbucket-notifier');
 
 let notifier = new BitbucketNotifier({
-  url:      'https://bitbucket.com',        // Bitbucket host e.g self hosted, defaults to https://bitbucket.com
-  token:    '1_A23CtFvGnsgdqwLPYZ',         // your Bitbucket private token
+  url:      'https://api.bitbucket.com',    // Bitbucket API host, defaults to https://api.bitbucket.com
+  username: 'don_omondi',                   // your Bitbucket username
+  password: '123456789Password',            // your Bitbucket app password
   repo:     'my-app/ember.js',              // name of your repo
-  branch:   'master',                       // optional, defaults to 'master'
-  job:      'build',                        // optional, defaults to 'build'
   poll:     60 * 1000                       // optional polling interval, defaults to 60 * 1000 i.e every minute
 });
 
