@@ -83,7 +83,7 @@ class BitbucketNotifier {
             } else {
                 addon.ui.writeLine('Found Zip File : ' + filename);
 
-                let lastModified = response.getHeader("Last-Modified");
+                let lastModified = response.headers['last-modified'];
                 addon.ui.writeLine('Last-Modified : ' + lastModified);
 
                 res(lastModified);
