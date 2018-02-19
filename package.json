@@ -1,6 +1,6 @@
 {
   "name": "fastboot-bitbucket-notifier",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A FastBoot App Server notifier for Bitbucket build artifacts",
   "main": "index.js",
   "scripts": {
